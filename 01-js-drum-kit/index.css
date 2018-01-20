@@ -1,3 +1,47 @@
-/* div {
-  color: #ff0000
-} */
+/* --------------------------------- */
+/*   Basic Setup   */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(bg.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.keys {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  min-height: 100vh; /* setting min-height so items inside will fit to the center on y axis*/
+  align-items: center;
+}
+
+.key {
+  width: 80px;
+  padding: 8px 5px;
+  margin: 10px;
+  text-align: center;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  font-family: 'Raleway';
+  color: #000000;
+  font-size: 24px;
+  text-transform: uppercase;
+  transition: all 0.1s
+}
+
+.sound {
+  display: block;
+  color: #fcce32;
+  font-family: 'Lato';
+  font-size: 14px;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #fee033;
+}
