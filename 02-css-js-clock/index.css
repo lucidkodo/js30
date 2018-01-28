@@ -5,6 +5,7 @@ body {
   display: flex;
   flex: 1;
   align-items: center;
+  background-color: #222
 }
 
 .clock {
@@ -14,7 +15,7 @@ body {
   margin: 0 auto;
   padding: 15px;
   border-radius: 50%;
-  border: 15px solid #000000
+  border: 15px solid #fff
 }
 
 /* without setting these properties for clock-face, */
@@ -28,13 +29,28 @@ body {
 }
 
 .hand {
-  width: 50%;
   height: 6px;
-  background: #000000;
   position: absolute;
   top: 50%;
   transform-origin: 100%; /* default transform-origin is 50% */
-  transform: rotate(90deg);
-  transition: all 0.5s; /* this makes the clock hand moves smoothly */
+  /* transform: rotate(90deg); */
+  transition: all 0.05s; /* this makes the clock hand moves smoothly */
   transition-timing-function: cubic-bezier(0, 2.7, 0.58, 1);
+}
+
+.second-hand {
+  width: 50%;
+  background: #dd3c27
+}
+
+.min-hand {
+  width: 45%;
+  left: 5%;
+  background: #777
+}
+
+.hour-hand {
+  width: 35%;
+  left: 15%;
+  background: #777
 }
