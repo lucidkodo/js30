@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  background-color: #222
+}
+
+.clock {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 50%;
+  border: 15px solid #fff
+}
+
+/* without setting these properties for clock-face, */
+/* the div will turn out to be height x 0 */
+/* assuming this div works as a WRAPPER to hold all 3 hands together */
+.clock-face { 
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px)
+}
+
+.hand {
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%; /* default transform-origin is 50% */
+  /* transform: rotate(90deg); */
+  transition: all 0.05s; /* this makes the clock hand moves smoothly */
+  transition-timing-function: cubic-bezier(0, 2.7, 0.58, 1);
+}
+
+.second-hand {
+  width: 50%;
+  background: #dd3c27;
+  opacity: 0.7
+}
+
+.min-hand {
+  width: 45%;
+  left: 5%;
+  background: #777
+}
+
+.hour-hand {
+  width: 35%;
+  left: 15%;
+  background: #000
+}
