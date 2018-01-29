@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 50px
+}
+
+.control {
+  margin-bottom: 50px
+}
