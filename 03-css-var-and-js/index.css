@@ -1,12 +1,40 @@
+/*  Default variables  */
+:root {
+  --base: #db4437;
+  --spacing: 10px;
+  --blur: 0px
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur))
+}
+
+.h1 {
+  color: var(--base)
+}
+
+
+/* Basic page styling / setup */
 body {
   text-align: center;
   background: #333;
   color: #fff;
-  font-family: 'Helvetica Neue', sans-serif;
-  font-weight: 100;
-  font-size: 50px
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 35px
 }
 
-.control {
+img { border-radius: 5px }
+
+.controls {
   margin-bottom: 50px
 }
+
+a {
+  color: var(--base);
+  text-decoration: none
+}
+
+input { width: 100px }
